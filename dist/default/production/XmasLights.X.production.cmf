@@ -1,0 +1,268 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\XmasLights.X.production.obj
+cinit CODE 0 3FD 3FD 2 2
+text1 CODE 0 34D 34D 15 2
+maintext CODE 0 362 362 9B 2
+cstackBANK0 BANK0 1 20 20 B 1
+$C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+end_init CODE 0 0 0 1 2
+config CONFIG 0 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 2B-5D 1
+BANK0 2B-5D 1
+CONST 1-34C 2
+ENTRY 1-34C 2
+IDLOC 2000-2003 2
+STACK 2B-5D 1
+CODE 1-34C 2
+SFR0 0-1F 1
+SFR1 80-DD 1
+EEDATA 2100-217F 2
+STRCODE 1-34C 2
+STRING 1-34C 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\XmasLights.X.production.obj
+3FD cinit CODE >147:C:\Users\Dave\AppData\Local\Temp\s9s8.
+3FD cinit CODE >150:C:\Users\Dave\AppData\Local\Temp\s9s8.
+3FD cinit CODE >156:C:\Users\Dave\AppData\Local\Temp\s9s8.
+3FD cinit CODE >158:C:\Users\Dave\AppData\Local\Temp\s9s8.
+3FE cinit CODE >159:C:\Users\Dave\AppData\Local\Temp\s9s8.
+34D text1 CODE >74:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+34D text1 CODE >76:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+359 text1 CODE >77:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+361 text1 CODE >76:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+362 maintext CODE >20:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+362 maintext CODE >22:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+364 maintext CODE >23:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+365 maintext CODE >24:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+366 maintext CODE >25:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+368 maintext CODE >27:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+36D maintext CODE >28:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+371 maintext CODE >29:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+375 maintext CODE >33:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+378 maintext CODE >35:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+381 maintext CODE >36:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+384 maintext CODE >38:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+38A maintext CODE >39:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+38F maintext CODE >40:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+391 maintext CODE >42:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+391 maintext CODE >43:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+393 maintext CODE >47:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+397 maintext CODE >49:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+39D maintext CODE >50:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3B4 maintext CODE >51:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3BA maintext CODE >52:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3C0 maintext CODE >53:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3C3 maintext CODE >54:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3C8 maintext CODE >55:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3CB maintext CODE >56:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3D0 maintext CODE >57:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3D3 maintext CODE >58:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3D8 maintext CODE >59:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3DB maintext CODE >61:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3DF maintext CODE >63:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3E1 maintext CODE >64:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3E2 maintext CODE >65:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3E7 maintext CODE >67:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3E9 maintext CODE >68:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3F1 maintext CODE >69:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3F3 maintext CODE >70:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+3FC maintext CODE >31:C:\Users\Dave\Documents\PIC\XmasLights.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 0 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 7FE 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+ltemp0 5E 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+ltemp1 62 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+ltemp2 66 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+ltemp3 60 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__Hstrings 7FE 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+_main 6C4 0 CODE 0 maintext dist/default/production\XmasLights.X.production.obj
+btemp 5E 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+ltemp 5E 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+start 0 0 CODE 0 init C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+ttemp 5E 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+wtemp 5E 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+ttemp0 5E 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+ttemp1 61 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+ttemp2 64 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+ttemp3 67 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+ttemp4 5F 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+wtemp0 5E 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+wtemp1 60 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+wtemp2 62 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+wtemp3 64 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+wtemp4 66 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+wtemp5 68 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+wtemp6 5F 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Hclrtext 7FE 0 ABS 0 clrtext -
+__CFG_FOSC$INTRCIO 0 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__Lmaintext 7FE 0 ABS 0 maintext -
+__end_of_cdelay 6C4 0 CODE 0 text1 dist/default/production\XmasLights.X.production.obj
+start_initialization 7FA 0 CODE 0 cinit dist/default/production\XmasLights.X.production.obj
+_OSCCAL 90 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\XmasLights.X.production.obj
+main@direction 25 0 BANK0 1 cstackBANK0 dist/default/production\XmasLights.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+__Hbank0 7FE 0 ABS 0 bank0 -
+__Hbank1 7FE 0 BANK1 1 bank1 -
+__Hcinit 7FE 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 7FE 0 ABS 0 maintext -
+__Hcommon 7FE 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+__Lbank0 7FE 0 ABS 0 bank0 -
+__Lbank1 7FE 0 BANK1 1 bank1 -
+__Lcinit 7FA 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+__Habs1 7FE 0 ABS 0 abs1 -
+__Hcode 7FE 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 7FE 0 ABS 0 sfr0 -
+__Hsfr1 7FE 0 ABS 0 sfr1 -
+__Htext 7FE 0 ABS 0 text -
+__Labs1 7FE 0 ABS 0 abs1 -
+__Lcode 7FE 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 7FE 0 ABS 0 sfr0 -
+__Lsfr1 7FE 0 ABS 0 sfr1 -
+__Ltext 7FE 0 ABS 0 text -
+__LcstackBANK0 7FE 0 ABS 0 cstackBANK0 -
+_RA2 2A 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 2B 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_cdelay 69A 0 CODE 0 text1 dist/default/production\XmasLights.X.production.obj
+__Hosccal 7FE 0 CODE 0 osccal -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+__size_of_cdelay 0 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__pmaintext 6C4 0 CODE 0 maintext dist/default/production\XmasLights.X.production.obj
+cdelay@count 20 0 BANK0 1 cstackBANK0 dist/default/production\XmasLights.X.production.obj
+__Lcommon 7FE 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+main@mode 27 0 BANK0 1 cstackBANK0 dist/default/production\XmasLights.X.production.obj
+main@delay 29 0 BANK0 1 cstackBANK0 dist/default/production\XmasLights.X.production.obj
+___osccal_val 7FE 0 CODE 0 osccal C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+stackhi 0 0 ABS 0 - C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+stacklo 0 0 ABS 0 - C:\Users\Dave\AppData\Local\Temp\s9s8.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__HcstackBANK0 7FE 0 ABS 0 cstackBANK0 -
+__Lend_init 0 0 CODE 0 end_init -
+end_of_initialization 7FA 0 CODE 0 cinit dist/default/production\XmasLights.X.production.obj
+__Hintentry 0 0 CODE 0 intentry -
+__Losccal 7FE 0 CODE 0 osccal -
+__Lstrings 7FE 0 ABS 0 strings -
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__ptext1 69A 0 CODE 0 text1 dist/default/production\XmasLights.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization 7FA 0 CODE 0 cinit dist/default/production\XmasLights.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+__Lclrtext 7FE 0 ABS 0 clrtext -
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__Hend_init 2 0 CODE 0 end_init -
+__end_of_main 7FA 0 CODE 0 maintext dist/default/production\XmasLights.X.production.obj
+_ANSEL 91 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+_PORTC 7 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+_TRISC 87 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__Hram 7FE 0 ABS 0 ram -
+__Lram 7FE 0 ABS 0 ram -
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\XmasLights.X.production.obj
+__initialization 7FA 0 CODE 0 cinit dist/default/production\XmasLights.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 5E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 3FD 7FA 2 2
+text1 0 34D 69A 15 2
+maintext 0 362 6C4 9B 2
+cstackBANK0 1 20 20 B 1
+reset_vec 0 0 0 1 2
+config 0 2007 400E 1 2
